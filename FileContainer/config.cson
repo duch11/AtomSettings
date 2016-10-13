@@ -1,0 +1,50 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "992d422f-861c-4e1f-968f-5f113e9ee5f4"
+  "autocomplete-plus":
+    backspaceTriggersAutocomplete: true
+  core:
+    autoHideMenuBar: true
+    disabledPackages: [
+      "atom-beautify"
+      "git-time-machine"
+      "gpp-compiler"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "*.exe"
+    ]
+    openEmptyEditorOnStart: false
+    projectHome: "C:\\Users\\jonas\\desktop"
+    themes: [
+      "one-dark-ui"
+      "carbon-blue-atom"
+    ]
+  editor:
+    fontSize: 18
+  "exception-reporting":
+    userId: "2544a31b-b52a-e79d-f1bd-8edc04e9a46d"
+  "keyboard-localization":
+    useKeyboardLayout: "da_DK"
+  welcome:
+    showOnStartup: false
+".c.source":
+  editor:
+    autoIndent: true
+    autoIndentOnPaste: false
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: false
+".cpp.source":
+  editor:
+    autoIndent: false
+    autoIndentOnPaste: false
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: false

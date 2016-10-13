@@ -1,0 +1,86 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+'.source.c, .source.cpp, .source.objc, .source.objcpp':
+  '#include <>':
+    'prefix': 'inc'
+    'body': 'include <${1:.h}>'
+
+  '#include ""':
+    'prefix': 'Inc'
+    'body': 'include "${1:.h}"'
+
+  'main()':
+    'prefix': 'main'
+    'body': 'main() {\n\t${1:}\n\treturn 0;\n}'
+
+  'For Loop':
+    'prefix': 'for'
+    'body': 'for (int i = 0; i < ${1:count}; i${2:++}) {\n\t${3:}\n}'
+
+  'Do While Loop':
+    'prefix': 'do'
+    'body': 'do {\n\t${0:/* code */}\n} while(${1:/* condition */});'
+
+  'While Loop':
+    'prefix': 'while'
+    'body': 'while (${1:/* condition */}) {\n\t${2:/* code */}\n}'
+
+  'fprintf':
+    'prefix': 'fprintf'
+    'body': 'fprintf(${1:stderr}, "${2:%s}\\\\n", $3);$4'
+
+  'If Condition':
+    'prefix': 'if'
+    'body': 'if (${1:/* condition */}) {\n\t${2:/* code */}\n}'
+
+  'If Else':
+    'prefix': 'ife'
+    'body': 'if (${1:/* condition */}) {\n\t${2:/* code */}\n} else {\n\t${3:/* code */}\n}'
+
+  'If ElseIf':
+    'prefix': 'iff'
+    'body': 'if (${1:/* condition */}) {\n\t${2:/* code */}\n} else if (${3:/* condition */}) {\n\t${4:/* code */}\n}'
+
+  'If ElseIf Else':
+    'prefix': 'iffe'
+    'body': 'if (${1:/* condition */}) {\n\t${2:/* code */}\n} else if (${3:/* condition */}) {\n\t${4:/* code */}\n} else {\n\t${5:/* code */}\n}'
+
+  'Switch Statement':
+    'prefix': 'switch'
+    'body': 'switch (${1:/* expression */}) {\n\tcase ${2:/* value */}:\n}'
+
+  'case':
+    'prefix': 'cs'
+    'body': 'case ${1:/* value */}:$0'
+
+  'printf':
+    'prefix': 'printf'
+    'body': 'printf("${1:%s}");$2'
+
+  'scanf':
+    'prefix': 'scanf'
+    'body': 'scanf(\"${1:%s}\\\\n\", $2);$3'
+
+  'Struct':
+    'prefix': 'st'
+    'body': 'struct ${1:name_t} {\n\t${2:/* data */}\n};'
