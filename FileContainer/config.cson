@@ -10,6 +10,7 @@
       "atom-beautify"
       "git-time-machine"
       "gpp-compiler"
+      "activate-power-mode"
     ]
     ignoredNames: [
       ".git"
@@ -22,12 +23,17 @@
     ]
     openEmptyEditorOnStart: false
     projectHome: "C:\\Users\\jonas\\desktop"
+    telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
       "carbon-blue-atom"
     ]
   editor:
     fontSize: 18
+    invisibles: {}
+    scrollPastEnd: true
+    showIndentGuide: true
+    tabLength: 4
   "exception-reporting":
     userId: "2544a31b-b52a-e79d-f1bd-8edc04e9a46d"
   "keyboard-localization":
